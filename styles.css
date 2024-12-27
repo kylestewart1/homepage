@@ -27,10 +27,39 @@ section#projects {
     grid-template-rows: 3fr 2fr;
 }
 
-.project > p {
-    padding: 20%;
-    text-align: center;
-    font-size: 2rem;
+.project-screenshot {
+    display: flex;
+    justify-content: center;
+}
+
+.project-screenshot > span {
+    padding: 0.5em;
     color: white;
-    background-color: blue;
+    font-size: 3.5rem;
+    text-align: center;
+    transform: translateY(0.2em);
+}
+
+.project-1 {
+    background-color: rgb(112, 112, 236);
+}
+
+.project-2 {
+    background-color: rgb(231, 110, 130);
+}
+
+.project-3 {
+    background-color: rgb(70, 124, 70);
+}
+
+.project-4 {
+    background-color: rgb(184, 27, 27);
+}
+
+.project-5 {
+    background-color: rgb(122, 26, 122);
+}
+
+.project-6 {
+    background-color: rgb(219, 99, 29);
 }
