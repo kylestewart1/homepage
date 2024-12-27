@@ -4,3 +4,33 @@
     box-sizing: border-box;
 }
 
+section#projects {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 25px;
+}
+
+#projects > h1 {
+    grid-column: 1 / -1;
+    justify-self: start;
+    align-self: baseline;
+}
+
+.project {
+    margin-bottom: 8%;
+    min-height: 500px;
+    border: 1px solid lightgray;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+}
+
+.project > p {
+    padding: 20%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: blue;
+}
