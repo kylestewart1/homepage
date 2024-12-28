@@ -10,7 +10,7 @@
 <body>
     <section id="intro">
         <div id="headshot-container">
-            <picture>
+            <picture id="header-image">
                 <img src="matrix_guy_480w.jpg" alt="the author">
             </picture>
             <h1>Guy Manderson</h1>
@@ -139,7 +139,8 @@
             </div>
         </div>
         <picture id="footer-image">
-            <img src="coding_security_portrait.png" alt="Code Security">
+            <source srcset="coding_security_800w.jpg" media="(min-width: 920px)">
+            <img src="coding_security_portrait.jpg" alt="Code Security">
         </picture>
     </section>
 </body>

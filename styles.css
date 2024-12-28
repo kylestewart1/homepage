@@ -21,10 +21,12 @@ section#intro {
     background: linear-gradient(150deg, var(--bg-color-blue) 0%, var(--bg-color-blue) 40%, var(--bg-color-white) 41%, var(--bg-color-white) 100%);
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 #about {
     margin: 50px;
+    padding: 10px;
     max-width: 600px;
     background-color: var(--bg-color-white);
     font-size: 1.5rem;
@@ -44,10 +46,10 @@ section#intro {
 }
 
 #headshot-container {
-    max-width: 400px;
+    max-width: 350px;
     position: relative;
     top: 20px;
-    left: 50px;
+    left: 75px;
 }
 
 picture > img {
@@ -79,8 +81,9 @@ section#projects {
     margin-right: 50px;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     column-gap: 25px;
+    row-gap: 20px;
 }
 
 #projects > h1 {
@@ -186,6 +189,28 @@ section#footer {
 }
 
 #footer-image > img {
-    max-width: 480px;
+    max-width: 500px;
     margin-top: 20px;
+    object-fit: contain;
 }
+
+@media (min-width: 520px) and (max-width: 1100px) {
+    
+
+    #about {
+        position: static;
+        right: 20px;
+        top: 40px;
+    }
+
+    
+    
+}
+
+@media (min-width: 1000px) {
+    #about {
+        position: relative;
+        left: 16px;
+    }
+}
+
