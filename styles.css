@@ -3,18 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --bg-color-white: rgb(248, 248, 246);
+    --bg-color-blue: rgb(39, 146, 179);
+}
 
 html, body {
     height: 100vh;
+    background-color: var(--bg-color-white);
+}
+
+i {
+    color: black;
 }
 
 section#intro {
-    background: linear-gradient(150deg, rgb(39, 146, 179) 0%, rgb(11, 135, 167) 40%, white 41%, white 100%);
+    background: linear-gradient(150deg, var(--bg-color-blue) 0%, var(--bg-color-blue) 40%, var(--bg-color-white) 41%, var(--bg-color-white) 100%);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #about {
     margin: 50px;
-    background-color: white;
+    max-width: 600px;
+    background-color: var(--bg-color-white);
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -150,4 +162,30 @@ section#projects {
 
 svg {
     width: 20px;
+}
+
+section#footer {
+    background-color: var(--bg-color-blue);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts-container {
+    margin: 50px;
+    color: var(--bg-color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#footer-image > img {
+    max-width: 480px;
+    margin-top: 20px;
 }
